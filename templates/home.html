@@ -1,0 +1,46 @@
+{% extends 'Base.html' %}
+
+{% block title %}Career Goal Recommendation{% endblock %}
+
+{% block content %}
+<!-- Introductory Content -->
+<section class="intro-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h1 class="card-title display-4 text-center text-primary mb-4">ML based Job Recommendation</h1>
+                        <p class="card-text lead">
+                            Job Recommendation System using Machine Learning and Flask.
+                        </p>
+                        <p class="card-text">
+                            This Flask application serves as a job recommendation system powered by a machine learning model.
+                            It allows users to input their education background, GPA, interests, work experience, and preferences
+                            for job location and remote work. The system then predicts and recommends suitable career goals based
+                            on this input data. The predictions are made using a pre-trained Random Forest classifier, and categorical
+                            data is encoded using LabelEncoders loaded from pre-saved models.
+                        </p>
+                        <p class="card-text">
+                            <strong>Features:</strong>
+                        </p>
+                        <ul class="card-text">
+                            <li>Flask framework for web application development.</li>
+                            <li>Machine learning model trained on job recommendation data.</li>
+                            <li>Integration of scikit-learn for machine learning tasks.</li>
+                            <li>Dynamic dropdown menus for selecting education, field of study, interests, relevant work experience, skills, job location, and remote work preferences.</li>
+                            <li>Responsive UI design for seamless user experience across devices.</li>
+                            <li>Input validation to ensure data integrity and accuracy of recommendations.</li>
+                            <li>Ability to reset form inputs and fetch new recommendations.</li>
+                            <li>Encapsulation of business logic in Python functions for modular development.</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="/" class="btn btn-primary btn-lg">Go to Recommendation Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
